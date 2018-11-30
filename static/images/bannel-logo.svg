@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="63px" viewBox="0 0 50 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>LOGO Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="51.0482981%" y1="20.4101781%" x2="47.8983487%" y2="139.219739%" id="linearGradient-1">
+            <stop stop-color="#50F9FF" offset="0%"></stop>
+            <stop stop-color="#2895FB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.6297305%" y1="-137.589721%" x2="50.4797811%" y2="25.1793012%" id="linearGradient-2">
+            <stop stop-color="#50F9FF" offset="0%"></stop>
+            <stop stop-color="#2895FB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.6344574%" y1="-13.1058486%" x2="49.4857077%" y2="59.1376361%" id="linearGradient-3">
+            <stop stop-color="#50F9FF" offset="0%"></stop>
+            <stop stop-color="#2895FB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="53.5734006%" y1="-12.2381313%" x2="49.4259399%" y2="59.9801243%" id="linearGradient-4">
+            <stop stop-color="#50F9FF" offset="0%"></stop>
+            <stop stop-color="#2895FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="方案2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index-已登录-White" transform="translate(-695.000000, -95.000000)">
+            <g id="Mesa-de-trabajo-1-copy@4x">
+                <g id="LOGO" transform="translate(695.000000, 95.000000)">
+                    <g id="Group">
+                        <polygon id="Fill-1" fill="url(#linearGradient-1)" points="25.1893939 0 18.1818182 6.43292228 18.1818182 32.2590361 32.1969697 32.2590361 32.1969697 6.43292228"></polygon>
+                        <polygon id="Fill-4" fill="url(#linearGradient-2)" points="18.1818182 39.0903614 18.1818182 63 25.1893939 56.2731222 32.1969697 63 32.1969697 39.0903614"></polygon>
+                        <polygon id="Fill-7" fill="url(#linearGradient-3)" points="0 22.5076236 0 62.6204819 9.84848485 53.5952877 9.84848485 13.2831325"></polygon>
+                        <polygon id="Fill-10" fill="url(#linearGradient-4)" points="40.1515152 53.5952877 50 62.6204819 50 22.5076236 40.1515152 13.2831325"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

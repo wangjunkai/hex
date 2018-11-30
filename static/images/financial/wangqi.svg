@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>往期产品</title>
+    <desc>Created with Sketch.</desc>
+    <g id="理财-新版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="理财-新-copy-2" transform="translate(-360.000000, -2910.000000)">
+            <g id="USDT" transform="translate(360.000000, 2910.000000)">
+                <g id="往期产品">
+                    <circle id="Oval" fill="#B3BBD3" cx="20" cy="20" r="20"></circle>
+                    <g id="时间" transform="translate(10.000000, 10.000000)">
+                        <path d="M10,0 C4.48571428,0 0,4.48571428 0,10 C0,15.5142857 4.48571428,20 10,20 C15.5142857,20 20,15.5142857 20,10 C20,4.48571428 15.5142857,0 10,0 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                        <path d="M13.8728571,12.4514286 L10.4157143,10.4514286 L10.4157143,5 C10.3898704,4.55894903 10.0246646,4.21451647 9.58285714,4.21451647 C9.14104965,4.21451647 8.77584387,4.55894903 8.75,5 L8.75,10.8328571 C8.75,11.1428571 9.13428572,11.4014286 9.38428572,11.5442857 C9.45285715,11.6485714 9.64285715,11.7442857 9.75857143,11.81 L13.1971429,13.8928571 C13.5957143,14.1228571 14.0257143,13.9871429 14.2571429,13.5885714 C14.4857143,13.19 14.2714286,12.6814286 13.8728571,12.4514286 Z" id="Path" fill="#B3BBD3"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

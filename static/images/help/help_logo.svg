@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>椭圆形</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="通用" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="帮助中心详情" transform="translate(-600.000000, -213.000000)">
+            <g id="椭圆形" transform="translate(600.000000, 213.000000)">
+                <circle id="Oval" fill="#6F8FF1" fill-rule="nonzero" cx="20" cy="20" r="20"></circle>
+                <g id="hex-white" transform="translate(11.000000, 7.000000)" fill="#FFFFFF" fill-rule="evenodd" stroke-width="1">
+                    <g id="Group">
+                        <path d="M9,0 L11.25,2.39297501 L11.25,12 L6.75,12 L6.75,2.39297501 L9,0 Z M6.75,14.7692308 L11.25,14.7692308 L11.25,24 L9,21.4029613 L6.75,24 L6.75,14.7692308 Z" id="Combined-Shape"></path>
+                        <polygon id="Fill-7" points="0 8.06709613 0 23.0769231 3.6 19.6997864 3.6 4.61538462"></polygon>
+                        <polygon id="Fill-10" points="14.4 19.6997864 18 23.0769231 18 8.06709613 14.4 4.61538462"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

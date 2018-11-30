@@ -1,0 +1,124 @@
+@import "./color";
+
+/*      table start    */
+.hex_table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.hex_table_header {
+  background-color: #fff;
+  font-size: 12px;
+  color: @cl_999;
+  display: table-header-group;
+}
+
+.hex_table_header.br {
+  border-bottom: 1px solid @cl_dbd;
+}
+.hex_table_body.br{
+  border-bottom: 1px solid @cl_f5f;
+}
+
+.hex_table_header > span {
+  display: table-cell;
+  padding: 0 20px;
+  line-height: 22px;
+}
+
+.hex_table_body > span {
+  display: table-cell;
+  padding: 8px 20px;
+  line-height: 23px;
+}
+
+.hex_table_body {
+  background-color: @cl_fff;
+  font-size: 12px;
+  color: #333333;
+  display: table-row;
+}
+
+.hex_table .fw {
+  font-weight: bold;
+  color: @cl_000;
+}
+
+.hex_table .rt {
+  text-align: right;
+}
+
+.hex_table .ct {
+  text-align: center;
+}
+
+.hex_table .lt {
+  text-align: left;
+}
+
+.hex_table_body .success {
+  color: #03BF7B;
+}
+
+.hex_table_body .lookover {
+  color: #6F8FF1;
+}
+
+.hex_table_body .audit {
+  color: #E96C42;
+}
+
+.hex_table_body .cancle {
+  color: @cl_999;
+}
+
+.hex_table_body .fail {
+  color: @cl_cd4;
+}
+
+.hex_table_body.active {
+  background-color: @cl_f0e;
+}
+
+.hex_table_body:last-child {
+  border-bottom: 1px solid @cl_858_2;
+}
+.hex_table_body .size0 {
+  font-size: 0;
+}
+
+.hex_table_body .handle {
+  color: #6F8FF1;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.hex_table_body {
+  line-height: 40px;
+}
+
+.hex_table_body:hover {
+  background-color: @cl_f0e;
+}
+
+
+.hex_table_header.padding th:first-child,
+.hex_table_body.padding td:first-child {
+  padding-left: 20px !important;
+}
+
+.hex_table_header.padding th:last-child,
+.hex_table_body.padding td:last-child {
+  padding-right: 20px !important;
+}
+
+.hex_table_header {
+  line-height: 32px;
+}
+
+.hex_table_row {
+  text-align: left;
+  font-size: 14px;
+  color: @cl_666;
+}

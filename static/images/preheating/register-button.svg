@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="76px" viewBox="0 0 240 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="-1.11022302e-14%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#32BEFF" offset="0%"></stop>
+            <stop stop-color="#2895FB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="HEX上线预热" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-360.000000, -575.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero" id="Group-8">
+            <g transform="translate(360.000000, 575.000000)">
+                <path d="M21.5819641,6.87082858 L170.733184,0.0597744129 C174.405208,-0.107910111 178.084806,0.0774090959 181.7216,0.61319472 L219.750408,6.21573658 C223.360909,6.74764854 226.389348,9.22311162 227.636899,12.662198 L239.400279,45.0899442 C241.105555,49.7908256 239.067705,55.030715 234.639013,57.3325094 L213.128242,68.5126418 C207.745548,71.3102743 201.795551,72.8347999 195.73436,72.9693526 L59.542433,75.9926849 C56.906638,76.051197 54.2747644,75.7584764 51.7158096,75.1221971 L11.411597,65.1006294 C7.01235979,64.0067672 3.61318567,60.5042396 2.64211876,56.0645109 L0.276648051,45.2495526 C-0.322603747,42.5097667 0.0585431092,39.6458867 1.35332011,37.1596012 L14.9033734,11.1402158 C16.2126774,8.6260348 18.7565071,6.99985428 21.5819641,6.87082858 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

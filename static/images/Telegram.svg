@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Telegram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="77.6460785%" y1="9.45526675%" x2="29.3672889%" y2="95.3246665%" id="linearGradient-1">
+            <stop stop-color="#35AEE2" offset="0%"></stop>
+            <stop stop-color="#1F97D6" offset="100%"></stop>
+        </linearGradient>
+        <path d="M5.08039672,10.5660937 L5.29002295,7.423125 L11.0377475,2.2809375 C11.2926984,2.05125 10.9858131,1.9396875 10.6487115,2.1403125 L3.55352459,6.590625 L0.484672131,5.625 C-0.173478685,5.439375 -0.181032787,4.98609375 0.634809836,4.659375 L12.5868098,0.0815625 C13.1330656,-0.163593754 13.6571311,0.21515625 13.4475049,1.0471875 L11.4121475,10.565625 C11.2695639,11.2420313 10.8583377,11.4051563 10.2894197,11.0934375 L7.19082295,8.82 L5.70172132,10.2534375 C5.52939345,10.4245312 5.38728197,10.565625 5.08039672,10.565625 L5.08039672,10.5660937 Z" id="path-2"></path>
+    </defs>
+    <g id="方案2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index-已登录-White" transform="translate(-1009.000000, -2148.000000)">
+            <g id="Footer" transform="translate(0.000000, 2065.000000)">
+                <g id="Group-10" transform="translate(1009.000000, 83.000000)">
+                    <g id="Telegram">
+                        <g>
+                            <circle id="Oval-9" fill="url(#linearGradient-1)" cx="12" cy="12" r="12"></circle>
+                            <polygon id="Path-2" fill="#CAE0EE" fill-rule="nonzero" points="8.82481068 17.3194817 7.30635596 13.3253546 14.8068441 8.39187694 15.4592919 8.7098118"></polygon>
+                            <g id="telegram" transform="translate(3.750000, 6.750000)">
+                                <g id="Path-3">
+                                    <mask id="mask-3" fill="white">
+                                        <use xlink:href="#path-2"></use>
+                                    </mask>
+                                    <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-2"></use>
+                                    <path d="M5.28929566,7.42580904 L7.19927069,8.82261775 C6.3438673,9.8704069 5.88264049,10.4594581 5.81559025,10.5897713 C5.71501488,10.7852411 4.62032796,11.1749324 4.62032796,11.1749324 C4.62032796,11.1749324 4.76706406,9.90542743 5.06053624,7.36641748 L5.28929566,7.42580904 Z" fill="#A8C6E1" fill-rule="nonzero" mask="url(#mask-3)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

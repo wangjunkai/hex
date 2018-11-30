@@ -1,0 +1,61 @@
+.chart-page .chart-container {
+  border: 0;
+}
+
+.day.chart-page,
+.day [class^='drawingToolbar'] {
+  background: #ffffff !important;
+}
+
+body.night,
+.night [class^='drawingToolbar'],
+.night #footer-chart-panel,
+.night .chart-controls-bar,
+.night .chart-page,
+.night .chart-markup-table {
+  background: #1E222A !important;
+}
+
+.chart-page .chart-controls-bar {
+  background-color: #1E222A;
+}
+
+.day.chart-page .chart-controls-bar {
+  background-color: #ffffff;
+}
+
+.chart-page .chart-controls-bar-buttons.date-range-wrapper {
+  display: none !important;
+}
+
+.chart-page .chart-controls-bar-buttons a {
+  color: #8790A1;
+  fill: #8790A1;
+  stroke: #8790A1;
+}
+
+.chart-page .chart-controls-bar-buttons.chart-series-controls a:not(.disabled):hover {
+  color: #6f8ff1;
+  fill: #6f8ff1;
+  stroke: #6f8ff1;
+  background-color: #292E39;
+}
+
+.day.chart-page .chart-controls-bar-buttons.chart-series-controls a:not(.disabled):hover {
+  background-color: #F1F5FA;
+}
+
+.chart-page .chart-controls-bar-buttons a.active,
+.feature-no-touch .chart-controls-bar-buttons a.active:hover {
+  color: #6f8ff1 !important;
+  fill: #6f8ff1 !important;
+  stroke: #6f8ff1 !important;
+}
+
+.chart-page .chart-controls-bar-buttons a:before {
+  border-color: #3c3a58;
+}
+
+.day.chart-page .chart-controls-bar-buttons a:before {
+  border-color: #E6EBF1;
+}

@@ -1,0 +1,294 @@
+@import "./color";
+
+.auth {
+  background-color: @cl_f5f;
+  width: 100%;
+}
+
+.auth-content {
+  width: 1200px;
+  min-height: 600px;
+  margin: 20px auto 20px auto;
+  background-color: @cl_fff;
+  padding-left: 80px;
+  position: relative;
+}
+
+.auth-content_title {
+  margin: 20px 0 30px 0;
+  font-size: 30px;
+  color: #000;
+  display: inline-block;
+}
+
+.auth-content_nav {
+  font-size: 14px;
+}
+
+.auth-content_nav span {
+  margin-right: 40px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid @cl_858;
+  color: @cl_333;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.auth-content_nav span.active {
+  color: @cl_link;
+  border-color: @cl_link;
+}
+
+.auth-content_group {
+  margin-top: 20px;
+  width: 400px;
+}
+
+.auth-content_group--error .normal-tip_error {
+  display: inline-block !important;
+}
+
+.auth-content_group--unavailable {
+  background-color: @cl_ddd !important;
+  color: @cl_bbb !important;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.auth-content_group.auth-content_group--error input {
+  border: 1px solid @cl_cd4 !important;
+  color: @cl_cd4 !important;
+}
+
+.auth-content_group .title {
+  font-size: 12px;
+  color: @cl_666;
+  margin-bottom: 6px;
+  display: inline-block;
+  width: 100%;
+}
+
+.auth-content_group.auth-content_group_code .title {
+  width: 270px;
+}
+.mention-money.auth-content_group.auth-content_group_code .title {
+  width: 100%;
+}
+
+.auth-content_group input {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px solid @cl_ddd;
+  color: #000;
+  font-size: 14px;
+  width: 400px;
+}
+
+.auth-content_group input::placeholder {
+  color: @cl_bbb;
+  font-size: 14px;
+}
+
+.auth-content_group .label-tip {
+  color: #333333;
+}
+
+.auth-content_group .serve-tip {
+  color: @cl_link;
+}
+
+.auth-content_group .normal-tip {
+  color: @cl_bbb;
+}
+
+.auth-content_group .normal-tip_error {
+  color: @cl_cd4 !important;
+  display: none;
+}
+
+.auth-content_group_mail {
+  position: relative;
+}
+
+.auth-content_group_mail .input {
+  width: 270px;
+}
+
+.auth-content_group_mail .mail_code {
+  width: 120px;
+  margin-left: 10px;
+  font-size: 14px;
+  color: @cl_fff;
+  background-color: @cl_link;
+  line-height: 40px;
+  display: inline-block;
+  float: right;
+  text-align: center;
+  cursor: pointer;
+}
+
+.auth-content_button {
+  height: 40px;
+  line-height: 40px;
+  background: @cl_link;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  margin: 30px 0;
+  width: 400px;
+  color: #fff;
+  display: inline-block;
+}
+
+.auth-content_button:hover {
+  background: @cl_link_hover;
+}
+
+.auth-bg {
+  position: absolute;
+  top: 130px;
+  right: 160px;
+  width: 400px;
+  height: 321px;
+}
+
+.auth-content_group .auth_tip {
+  color: @cl_link;
+}
+
+.auth-content_title_tip {
+  font-size: 14px;
+  color: @cl_999;
+}
+
+.auth-content_group_auth_tip {
+  font-size: 14px;
+  color: @cl_333;
+  width: 400px;
+  margin-bottom: 150px;
+}
+
+.auth-content_group_auth_tip .auth_tip {
+  color: @cl_link;
+  cursor: pointer;
+}
+
+.auth-content_nav {
+  font-size: 14px;
+}
+
+.auth-content_nav span {
+  margin-right: 40px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid rgba(133, 131, 172, 0.2);
+  color: #333333;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.auth-content_nav span.google:before {
+  background: url('../images/security/an_google.svg') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: 14px auto;
+}
+
+.auth-content_nav span.phone:before {
+  background: url('../images/user/mobile.png') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: auto 14px;
+}
+
+.auth-content_nav span:before {
+  background: url('../images/security/an_money.svg') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: 14px auto;
+}
+
+.auth-content_nav span:before {
+  background: url('../images/user/email.png') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: 14px auto;
+}
+
+.auth-content_nav span.google.active:before {
+  background: url('../images/security/an_google_check.svg') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: 13px auto;
+}
+
+.auth-content_nav span.active {
+  color: @cl_link;
+  border-color: @cl_link;
+}
+
+.auth-content_nav span.email.active:before {
+  background: url('../images/user/email_check.png') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: 14px auto;
+}
+
+.auth-content_nav span.phone.active:before {
+  background: url('../images/user/mobile_check.svg') no-repeat;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  height: 14px;
+  background-size: auto 14px;
+}
+
+.auth-content .auth-content_group .password_group {
+  position: relative;
+}
+
+.auth-content .auth-content_group .password_group input {
+  padding-right: 35px;
+}
+
+.auth-content .auth-content_group .password_group_tip {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.auth-content .auth-content_group .password_group_tip.week {
+  color: @cl_cd4;
+}
+
+.auth-content .auth-content_group .password_group_tip.middle {
+  color: @cl_f5a;
+}
+
+.auth-content .auth-content_group .password_group_tip.strong {
+  color: @cl_buy;
+}

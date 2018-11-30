@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="个人中心-修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心" transform="translate(-132.000000, -92.000000)" fill="#C5C3DD">
+            <g id="左导航" transform="translate(121.000000, 80.000000)">
+                <g id="个人中心">
+                    <g>
+                        <path d="M14.9995125,20 C15.8352566,20.6279105 16.8741752,21 18,21 C19.1258248,21 20.1647434,20.6279105 21.0004875,20 L23.25,20 L25,21.8326603 L25,26.2644039 L23.25,28 L12.75,28 L11,26.2734232 L11,21.83608 L12.75,20 L14.9995125,20 Z M18,23 L17,26.1957903 L18,27 L19,26.1957903 L18,23 Z M18,20 C15.790861,20 14,18.209139 14,16 C14,13.790861 15.790861,12 18,12 C20.209139,12 22,13.790861 22,16 C22,18.209139 20.209139,20 18,20 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>深度icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-172.000000, -1763.000000)" fill="#8583AC">
+            <g id="深度icon" transform="translate(172.000000, 1762.000000)">
+                <g id="深度icon-press" transform="translate(0.000000, 1.000000)">
+                    <path d="M8,13 L9.29385018,11.6323273 L10.0398936,9 L12.0141171,8.00316563 L13.0357416,3.87981792 L13.6337121,0.921303035 L16,0 L16,15 L8,15 L0,15 L0,0 L2.36628787,0.921303035 L3.54437782,2.87785098 L4.926423,4 L5.84384331,6.38788958 L7.04327741,7 L8,13 Z" id="Combined-Shape" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

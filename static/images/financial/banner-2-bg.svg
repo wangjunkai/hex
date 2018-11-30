@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="115px" height="95px" viewBox="0 0 115 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FF8200" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-2">
+            <stop stop-color="#FFEAAF" offset="0%"></stop>
+            <stop stop-color="#FF8200" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-3">
+            <stop stop-color="#FFEAAF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FF8200" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="85.1619945%" y1="80.078125%" x2="20.0137868%" y2="12.6378676%" id="linearGradient-4">
+            <stop stop-color="#FFEAAF" stop-opacity="0.401437953" offset="0%"></stop>
+            <stop stop-color="#FF8200" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="100%" x2="0%" y2="0%" id="linearGradient-5">
+            <stop stop-color="#FFEAAF" stop-opacity="0.96838202" offset="0%"></stop>
+            <stop stop-color="#FF8200" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="理财-新版" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.39875">
+        <g id="理财-新-copy-2" transform="translate(-640.000000, -445.000000)">
+            <g id="1" transform="translate(360.000000, 440.000000)">
+                <g id="bg" transform="translate(280.000000, 5.000000)">
+                    <path d="M115,30 C93.3676599,35.0870825 77.4509063,45.8849159 67.2497393,62.3935005 C51.9479889,87.1563773 23.0404496,64.7053841 0,95 L115,95 L115,30 Z" id="Path-2" fill="url(#linearGradient-1)" opacity="0.498524"></path>
+                    <circle id="Oval-Copy-4" fill="url(#linearGradient-2)" opacity="0.297944568" cx="96" cy="10" r="10"></circle>
+                    <circle id="Oval-Copy-6" fill="url(#linearGradient-3)" opacity="0.5" cx="73" cy="39" r="9"></circle>
+                    <circle id="Oval-Copy-2" fill="url(#linearGradient-4)" opacity="0.401427522" cx="61" cy="55" r="17"></circle>
+                    <circle id="Oval-Copy-3" fill="url(#linearGradient-5)" opacity="0.5" cx="35" cy="33" r="5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

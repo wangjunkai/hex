@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>买卖hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页+交易" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="币币交易-白未登录" transform="translate(-1334.000000, -113.000000)">
+            <g id="委托列表" transform="translate(1039.000000, 104.000000)">
+                <g id="买卖hover" transform="translate(295.000000, 9.000000)">
+                    <g id="Group-3-Copy-4">
+                        <rect id="Rectangle-Copy" fill="#8898DF" fill-rule="nonzero" x="4" y="2" width="10" height="1"></rect>
+                        <rect id="Rectangle-Copy-2" fill="#03BF7B" fill-rule="nonzero" x="0" y="5" width="14" height="2"></rect>
+                        <rect id="Rectangle-Copy-3" fill="#8898DF" fill-rule="nonzero" x="4" y="9" width="10" height="1"></rect>
+                        <polygon id="Combined-Shape" fill="#03BF7B" fill-rule="nonzero" points="3.34377964 10.9981444 14 10.9981444 14 12 4.01151243 12 2.89807063 12 2.01202432 10.5732727 1.07507205 12 0 12 2.01202432 9"></polygon>
+                        <polygon id="Combined-Shape-Copy-2" fill="#E96C42" fill-rule="nonzero" transform="translate(7.000000, 1.500000) scale(1, -1) translate(-7.000000, -1.500000) " points="3.34377964 1.99814439 14 1.99814439 14 3 4.01151243 3 2.89807063 3 2.01202432 1.57327272 1.07507205 3 0 3 2.01202432 0"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>单选选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="首页+交易" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Index-新1-Copy-6" transform="translate(-1657.000000, -120.000000)">
+            <g id="首页头部导航">
+                <g id="Group-31" transform="translate(1637.000000, 60.000000)">
+                    <g id="Group-38" transform="translate(20.000000, 57.000000)">
+                        <g id="单选选中" transform="translate(0.000000, 3.000000)">
+                            <circle id="Oval-Copy" stroke="#6F8FF1" stroke-width="1" fill="#292E39" cx="7" cy="7" r="6.5"></circle>
+                            <circle id="Oval-Copy-3" fill="#6F8FF1" cx="7" cy="7" r="4"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

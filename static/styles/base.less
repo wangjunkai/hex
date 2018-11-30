@@ -1,0 +1,116 @@
+@import "./color";
+@import "./widget";
+
+@font-face {
+  font-family: HexNumber;
+  font-style: normal;
+  src: url('../fonts/hex-number.otf') format('OpenType');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-family: Microsoft YaHei, PingFang SC, Open Sans, Hiragino Sans GB, Heiti SC, monospace;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+ol, ul, li, dl, dt, dd {
+  list-style: none;
+}
+
+table, thead, tbody, td, th {
+  border-spacing: 0;
+  font-weight: normal;
+}
+
+input, textarea, button {
+  border: 0;
+  outline: none;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  color: black;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button, a {
+  cursor: pointer
+}
+
+img {
+  width: 100%;
+  border: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+input:-moz-placeholder {
+  color: #bbb;
+}
+
+input::-moz-placeholder {
+  color: #bbb;
+}
+
+input:-ms-input-placeholder {
+  color: #bbb;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#__nuxt, #__layout, #app {
+  height: 100%;
+}
+
+body.hidemeiqia #MEIQIA-BTN-HOLDER {
+  display: none !important;
+}
+
+#app {
+  background-color: #13161c;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-content p.question-qrcode img {
+  width: 220px !important;
+}
+
+.coin-list-trades .el-loading-mask {
+  background: none;
+}

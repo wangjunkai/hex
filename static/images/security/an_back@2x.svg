@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>ico_back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="图标" transform="translate(-77.000000, -633.000000)">
+            <g id="ico_back" transform="translate(77.000000, 633.000000)">
+                <g id="icon-copy">
+                    <g>
+                        <rect id="Rectangle-10" fill="#C5C3DD" x="0" y="0" width="20" height="20"></rect>
+                        <polygon id="Combined-Shape" fill="#FFFFFF" points="13.4849242 4.48492424 7.96984848 10 13.4849242 15.5150758 12 17 5 10 12 3 13.4849242 4.48492424"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,239 @@
+@import "../../../static/styles/color";
+
+.entrust-list {
+  width: 280px;
+  background-color: @cl_content;
+  display: inline-block;
+  height: 782px;
+  float: left;
+  .entrust-list_title {
+    padding-right: 10px;
+    color: @cl_CED3DD;
+    line-height: 30px;
+    font-size: 12px;
+    border-bottom: 1px solid @cl_292E39;
+    position: relative;
+    .dot_right {
+      font-weight: normal;
+    }
+    .dot_tip {
+      font-size: 12px;
+      color: @cl_5E6573;
+      margin-right: 8px;
+    }
+    .dot_tip_select {
+      display: inline-block;
+      position: relative;
+      color: @cl_CED3DD;
+    }
+    .dot_tip_select_content {
+      position: absolute;
+      font-size: 12px;
+      color: #ffffff;
+      right: 0;
+      text-align: center;
+      line-height: 36px;
+      background-color: #292E39;
+      width: 70px;
+      z-index: 2;
+      top: 30px;
+      box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+    }
+    .dot_tip_select_content li {
+      cursor: pointer;
+    }
+    .dot_tip_select_content li:hover,
+    .dot_tip_select_content li.active {
+      background-color: #333946;
+    }
+    .dot_tip_select_tip {
+      font-size: 12px;
+      color: @cl_CED3DD;
+      cursor: pointer;
+    }
+    .dot_tip_select_tip:after {
+      content: '';
+      display: inline-block;
+      margin-left: 4px;
+      vertical-align: middle;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 3px 0 3px;
+      border-color: @cl_CED3DD transparent transparent transparent;
+    }
+    .select_list_tab {
+      display: inline-block;
+      height: 30px;
+      .all, .buy, .sell {
+        display: inline-block;
+        width: 34px;
+        height: 30px;
+        background-size: 14px 14px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-position: center;
+      }
+      .active {
+        background-color: @cl_292E39;
+      }
+      .all {
+        background-image: url("../../../static/images/sell_buy.svg");
+      }
+      .all:hover,.all.active {
+        background-image: url("../../../static/images/sell_buy_active.svg");
+      }
+      .all.active {
+        border-top: 2px solid @cl_link;
+      }
+      .sell {
+        background-image: url("../../../static/images/sell.svg");
+      }
+      .sell:hover,.sell.active {
+        background-image: url("../../../static/images/sell_active.svg");
+      }
+      .sell.active {
+        border-top: 2px solid @cl_link;
+      }
+      .buy {
+        background-image: url("../../../static/images/buy.svg");
+      }
+      .buy:hover,.buy.active {
+        background-image: url("../../../static/images/buy_active.svg");
+      }
+      .buy.active {
+        border-top: 2px solid @cl_link;
+      }
+    }
+  }
+  .entrust-list_content_4 {
+    dt span.price,
+    dd span.price {
+      text-align: left;
+      min-width: 90px;
+    }
+    .body.buying .price {
+      color: @cl_sell;
+    }
+    .body.average .price {
+      color: @cl_buy;
+    }
+    dt span.num,
+    dd span.num {
+      text-align: right;
+      min-width: 75px;
+    }
+    dt span.money,
+    dd span.money {
+      text-align: right;
+      width: 40%;
+      padding-right: 8px;
+    }
+    dd:hover {
+      background-color: #383655;
+    }
+    .title {
+      min-width: 43px;
+      color: @cl_sell;
+      padding-left: 8px;
+    }
+    dt span.price.title-price,
+    .average .price,
+    dd span.price {
+      padding-left: 10px;
+    }
+  }
+  /*委托列表*/
+  .entrust-list_content {
+    font-size: 12px;
+    line-height: 22px;
+    width: 100%;
+    color: @cl_CED3DD;
+
+    .header {
+      line-height: 30px;
+      height: 30px;
+      padding: 0 2px;
+      display: table;
+      width: 100%;
+      color: @cl_5E6573;
+    }
+    .body {
+      display: table;
+      width: 100%;
+      cursor: pointer;
+      position: relative;
+      margin: 2px 0;
+    }
+
+    dt span,
+    dd span {
+      display: table-cell;
+      white-space: nowrap;
+      z-index: 1;
+      position: relative;
+    }
+
+    dd span.progress {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      top: 0;
+      z-index: 0;
+      margin: 0 2px;
+    }
+
+    dd.buying .progress {
+      background: rgba(233, 108, 66, 0.1);
+    }
+    dd.average .progress {
+      background: rgba(3, 191, 123, 0.1);
+    }
+  }
+  .entrust-list_content_center {
+    font-size: 13px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 8px;
+    .new-money-dot {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    > span {
+      float: left;
+      width: 33.333%;
+      color: @cl_c5c;
+      padding: 0 5px;
+      text-align: right;
+    }
+
+    .price {
+      text-align: center;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .num {
+      width: 25%;
+    }
+
+    .money {
+      width: 33%;
+    }
+    .tip {
+      margin-left: 10px;
+    }
+
+    .rise {
+      color: @cl_buy;
+    }
+
+    .fall {
+      color: @cl_sell;
+    }
+
+  }
+}

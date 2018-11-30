@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>watch</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="通用" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="帮助中心-copy" transform="translate(-1415.000000, -635.000000)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(360.000000, 603.000000)">
+                <g id="Group-4-Copy-2">
+                    <g id="watch" transform="translate(1055.000000, 32.000000)">
+                        <circle id="Oval" stroke="#BDBCCB" stroke-width="1" fill="#FFFFFF" cx="9" cy="9" r="8.5"></circle>
+                        <polygon id="Combined-Shape" fill="#BDBCCB" points="9.01015254 8.31962568 13 12.2893219 12.2857143 13 8 8.7414518 8 3 9.01015254 3"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="14px" viewBox="0 0 16 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>通知 (1)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="个人中心-修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心" transform="translate(-351.000000, -93.000000)" fill="#FF5D38">
+            <g id="Group-16" transform="translate(331.000000, 80.000000)">
+                <g id="tital">
+                    <g id="通知-(1)" transform="translate(20.000000, 13.000000)">
+                        <g id="Shape">
+                            <path d="M13.5384615,11.4545455 L13.5384615,2.54545455 L16,2.54545455 L16,11.4545455 L13.5384615,11.4545455 Z M0,11.4545455 L0,2.54545455 L4.95261538,2.54545455 L11.0769231,0 L11.0769231,14 L4.90338462,11.4545455 L0,11.4545455 Z M8.61538462,10.1818182 L8.61538462,3.81818182 L6.18953846,5.09090909 L2.46153846,5.09090909 L2.46153846,8.90909091 L6.16369231,8.90909091 L8.61538462,10.1818182 Z" fill-rule="nonzero"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

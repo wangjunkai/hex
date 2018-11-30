@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="240px" height="85px" viewBox="0 0 240 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>image_绿色波纹</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="40.8865094%" x2="100%" y2="40.8865083%" id="linearGradient-1">
+            <stop stop-color="#47BE5B" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#47BE5B" stop-opacity="0.2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="TradingView" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01规范" transform="translate(-530.000000, -765.000000)">
+            <g id="image_绿色波纹" transform="translate(530.000000, 765.000000)">
+                <rect id="Rectangle-4-Copy" fill="url(#linearGradient-1)" x="0" y="0" width="240" height="85"></rect>
+                <rect id="Rectangle" fill="#18B34C" opacity="0.200000003" x="238" y="0" width="2" height="85"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

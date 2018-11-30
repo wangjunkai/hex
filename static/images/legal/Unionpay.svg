@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>card</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="个人中心-修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="收款方式" transform="translate(-351.000000, -179.000000)">
+            <g id="Group" transform="translate(351.000000, 177.000000)">
+                <g id="card" transform="translate(0.000000, 2.000000)">
+                    <g>
+                        <circle id="Oval-4" fill="#E96C42" fill-rule="nonzero" cx="9" cy="9" r="9"></circle>
+                        <path d="M15,6 L3,6 L3,5 C3,4.44771525 3.44771525,4 4,4 L14,4 C14.5522847,4 15,4.44771525 15,5 L15,6 Z M15,8 L15,13 C15,13.5522847 14.5522847,14 14,14 L4,14 C3.44771525,14 3,13.5522847 3,13 L3,8 L15,8 Z M10.6092066,10 C10.4280837,10 10.2695633,10.1217053 10.2227802,10.296682 L9.60092827,12.6225115 C9.59417052,12.6477866 9.5907481,12.6738371 9.5907481,12.7 C9.5907481,12.8656854 9.72506267,13 9.8907481,13 L12.9491748,13 C13.1333206,13 13.2936735,12.8742815 13.3376181,12.6954561 L13.9086849,10.3715921 C13.9144423,10.3481634 13.9173525,10.3241257 13.9173525,10.3 C13.9173525,10.1343146 13.7830379,10 13.6173525,10 L10.6092066,10 Z M4,10 L4,11 L8,11 L8,10 L4,10 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

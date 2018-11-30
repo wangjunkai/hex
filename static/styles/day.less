@@ -1,0 +1,386 @@
+@import './color.less';
+
+.day {
+  .deal-header {
+    background: white !important;
+    .header-user-info {
+      .lang-content {
+        .lang {
+          color: black;
+        }
+      }
+    }
+  }
+  .money-exchange-content {
+    background-color: #F8F9FB;
+    .top {
+      .top-nav {
+        background-color: @cl_f0f;
+        color: @cl_333;
+        .search input {
+          background-color: @cl_fff;
+          border: 1px solid @cl_ddd;
+          color: @cl_333;
+        }
+        .noDataText,
+        .coin-infomation {
+          background-color: @cl_fff;
+          color: @cl_333;
+        }
+        .coin-infomation li .currency .colour {
+          color: @cl_333;
+        }
+      }
+      .top-nav .nav > li.before:after {
+        background-image: url("../images/gray_down.png");
+      }
+      .top-nav .nav > li.before.active:after {
+        background-image: url("../images/security/head_white.png")
+      }
+    }
+    .money-exchange {
+      .new-money-title {
+        color: @cl_999;
+      }
+      .new-money-price {
+        color: @cl_aaa;
+      }
+      .money-type .type-weight {
+        color: @cl_333;
+      }
+      .new-money-dot {
+        color: @cl_333;
+        font-weight: 600;
+      }
+      .new-money-dot.rise {
+        color: @cl_buy;
+      }
+      .new-money-dot.fall {
+        color: @cl_sell;
+      }
+      .select_background {
+        border: 1px solid #E1E0EC;
+        background-color: #fff;
+      }
+      .select_background_day.active {
+        background-color: #F5F7FB;
+      }
+      .entrust-list,
+      .chart-block,
+      .exchange-block,
+      .knockdown-list,
+      .exchange-record,
+      .dealcoin-list {
+        border: 1px solid rgba(225, 224, 236, 1);
+      }
+      .entrust-list,
+      .entrust-list_title,
+      .entrust-list_content,
+      .entrust-list_content .header,
+      .entrust-list_content_center,
+      .hex-chart-plugin,
+      .exchange-block,
+      .exchange-block_content,
+      .exchange-record,
+      .exchange-record_table_body,
+      .exchange-record_table_header,
+      .exchange-block_input,
+      .knockdown-list,
+      .chart-block,
+      .coin-title,
+      .coin-search,
+      .coin-content,
+      .dealcoin-list {
+        background-color: @cl_fff;
+      }
+      .entrust-list_title {
+        color: @cl_333;
+      }
+      .entrust-list_title .dot_tip {
+        color: @cl_aaa;
+      }
+      .entrust-list_title .dot_tip_select_tip {
+        color: @cl_333;
+      }
+      .entrust-list_title .dot_tip_select_tip:after {
+        border-color: #9094a4 transparent transparent transparent
+      }
+      .entrust-list_content dt span {
+        color: @cl_999;
+      }
+      .entrust-list_content dd span {
+        color: @cl_333;
+      }
+      .entrust-list_content_3_body .num.buy {
+        color: @cl_buy;
+      }
+      .entrust-list_content_3_body .num.sale {
+        color: @cl_sell;
+      }
+      .entrust-list_content .header {
+        box-shadow: 0 1px 0 0 rgba(11, 10, 23, 0.15);
+      }
+      .entrust-list_content_4 dd:hover,
+      .entrust-list_content_3 dd:hover,
+      .dealcoin-list .coin-content .coin-list_content .body:hover,
+      .exchange-record .hex_table_body:hover {
+        background-color: @cl_f0e;
+      }
+      .knockdown-list .knockdown-list_content .body.new{
+        background-color: @cl_f0e;
+      }
+      .entrust-list_content .buying .title,
+      .entrust-list_content .buying .price {
+        color: @cl_sell;
+      }
+      .entrust-list_content .average .title,
+      .entrust-list_content .average .price {
+        color: @cl_buy;
+      }
+      .entrust-list_content_center {
+        background-color: #FBFCFE;
+      }
+      .exchange-block_nav {
+        color: @cl_666;
+        background-color: @cl_fff;
+      }
+      .exchange-block .exchange-block_button_sale.no_login,
+      .exchange-block .exchange-block_button_buy.no_login {
+        background: #EEEEEE;
+        color: @cl_link;
+      }
+      .exchange-block_tip {
+        color: @cl_999;
+      }
+      .exchange-block_tip .num {
+        color: @cl_333;
+        font-weight: 600;
+      }
+      .exchange-block_current_exchange {
+        color: @cl_333;
+      }
+      .exchange-block_current_exchange .tip {
+        color: @cl_999;
+      }
+      .exchange-block_input .ipt_hover {
+        color: @cl_bbb;
+      }
+      .exchange-block_input .ipt_hover input {
+        color: @cl_333;
+      }
+      .exchange-block_input .market_tip {
+        color: @cl_333;
+      }
+      .exchange-block .exchange-block_input {
+        border: 1px solid #E6EBF1;
+      }
+      .exchange-block_owner_tip {
+        background-color: #E6EBF1;
+        color: @cl_333;
+      }
+      .exchange-block_per li {
+        background-color: @cl_f0e;
+      }
+      .exchange-block_per li:hover {
+        background-color: @cl_link;
+      }
+      .exchange-block_input .before,
+      .exchange-block_input .after {
+        color: @cl_bbb;
+      }
+      .exchange-block_tip .tip {
+        color: @cl_999;
+      }
+      .exchange-block_slider .el-slider__runway {
+        background-color: #DDDDE4;
+      }
+      .exchange-block_slider .block_slider_dot .dot {
+        background-color: #DDDDE4;
+      }
+      .exchange-block_slider .block_slider_dot .dot.active {
+        background-color: #6F8FF1;
+      }
+      .exchange-record_title {
+        color: @cl_333;
+      }
+      .exchange-record_table_header {
+        color: @cl_999;
+      }
+      .exchange-record_table_header > span {
+        border-bottom: 1px solid rgba(11, 10, 23, 0.15);;
+      }
+      .exchange-record_table_body {
+        color: @cl_333;
+      }
+
+      .hex-chart.fullscreen {
+        background: @cl_fff !important;
+      }
+      .hex-chart-plugin .plugin_chart_nav span.active {
+        background-color: @cl_f0e;
+        color: @cl_link;
+      }
+      .hex-chart-plugin .plugin_interval {
+        color: @cl_999;
+      }
+      .plugin_interval_minute_tip:after {
+        background-image: url("../images/gray_down.png");
+      }
+
+      .plugin_interval_minute_tip:hover:after,
+      .plugin_interval_minute_tip.active:after {
+        background-image: url("../images/select_down.png");
+      }
+      .hex-chart-plugin .plugin_chart_nav {
+        color: @cl_999;
+      }
+      .hex-chart-plugin .plugin_major_button {
+        border-left: 1px solid #E6EBF1;
+        border-right: 1px solid #E6EBF1;
+      }
+      .hex-chart-content {
+        background-color: @cl_fff;
+        .el-loading-mask {
+          background-color: @cl_fff;
+        }
+
+        .el-loading-spinner .path {
+          stroke: @cl_link;
+        }
+      }
+      .chart-page {
+        background-color: @cl_fff;
+      }
+      .decrement-button {
+        border-color: rgba(197, 195, 221, 1) transparent transparent transparent;
+      }
+      .increment-button {
+        border-color: transparent transparent rgba(197, 195, 221, 1) transparent;
+      }
+
+      .dot_tip_select_content,
+      .plugin_interval_minute_content {
+        background: @cl_fff;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+        color: @cl_333;
+      }
+      .dot_tip_select_content li:hover,
+      .dot_tip_select_content li.active,
+      .plugin_interval_minute_content li:hover,
+      .plugin_interval_minute_content li.active {
+        background-color: @cl_f0e;
+      }
+      .entrust-list_content_3_body::-webkit-scrollbar-track {
+        background-color: #f0eff7;
+      }
+      .entrust-list_content_3_body::-webkit-scrollbar-thumb {
+        background-color: #DDDDDD;
+      }
+
+      .dealcoin-list .coin-title .coin-title_item.active,
+      .plugin_interval_minute_tip:hover,
+      .plugin_interval_minute_tip.active,
+      .hex-chart-plugin .plugin_interval .plugin_interval_tip.active,
+      .hex-chart-plugin .plugin_interval .plugin_interval_tip:hover,
+      .entrust-list .entrust-list_title .select_list_tab .active,
+      .exchange-block .exchange-block_nav .active,
+      .exchange-record .exchange-record_title .active {
+        background-color: #F1F5FA;
+      }
+      .dealcoin-list .coin-title,
+      .hex-chart-plugin,
+      .entrust-list .entrust-list_title,
+      .knockdown-list .knockdown-list_title,
+      .exchange-block .exchange-block_nav,
+      .exchange-record .exchange-record_title {
+        border-bottom: 1px solid #F1F5FA
+      }
+      .dealcoin-list .coin-search .search {
+        border: 1px solid #E6EBF1;
+      }
+      .dealcoin-list .coin-search .sort {
+        border: 1px solid #F1F5FA;
+      }
+      .dealcoin-list .coin-search .sort .sort_item.active {
+        background-color: #F1F5FA;
+      }
+      .dealcoin-list .coin-search .search input {
+        color: #333333;
+      }
+
+      .dealcoin-list .coin-content,
+      .knockdown-list .knockdown-list_content {
+        color: #333333;
+      }
+      .dealcoin-list .coin-content .colour {
+        color: #AAAAAA;
+      }
+      .dealcoin-list .coin-content .colour .market_from {
+        color: #333333;
+      }
+      .dealcoin-list .coin-search .cut {
+        background-color: #F1F5FA;
+      }
+      .new-money .select_background .active {
+        background-color: transparent;
+      }
+      .vb > .vb-dragger .vb-dragger-styler {
+        background: #DDDDDD;
+      }
+      .hide-trading .el-checkbox .el-checkbox__input .el-checkbox__inner {
+        background-color: #ffffff;
+      }
+    }
+    //分页样式
+    .paging-source-deal {
+      text-align: center;
+      padding: 10px 0;
+      .el-pagination.is-background .btn-next,
+      .el-pagination.is-background .btn-prev,
+      .el-pagination.is-background .el-pager li {
+        border: 1px solid @cl_ddd;
+        background: @cl_fff;
+        color: @cl_666;
+      }
+      .el-pagination.is-background .el-pager li:not(.disabled).active {
+        color: @cl_fff;
+        background: @cl_link;
+      }
+    }
+    .hex_table_body {
+      color: @cl_515;
+    }
+    .hex_table_header {
+      color: @cl_153;
+    }
+    .entrust-list_title.cursor.inline-black {
+      color: rgba(102, 102, 102, 1);
+    }
+    .entrust-list_title.cursor.inline-black.active {
+      color: rgba(51, 51, 51, 1);
+    }
+    .hex_table_header.br {
+      border-bottom: 1px solid rgba(241, 244, 248, 1);
+    }
+    .deal-tbody {
+      background: white;
+    }
+    .deal-paging-source .el-pagination.is-background .btn-prev,
+    .deal-paging-source .el-pagination.is-background .btn-next,
+    .deal-paging-source .el-pagination.is-background .el-pager li {
+      background: none;
+      border: 1px solid rgba(221, 221, 221, 1);
+    }
+    .deal-paging-source .el-pagination.is-background .el-pager li:not(.disabled).active {
+      background-color: @cl_link !important;
+      color: #fff !important;
+    }
+
+  }
+  .money-exchange-content.exchange-full {
+    background-color: #F8F9FB;
+  }
+  .money-exchange-content.exchange-full .money-exchange .chart-block {
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="C2C" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="法币首页-购买详情" transform="translate(-120.000000, -737.000000)">
+            <g id="icon" transform="translate(120.000000, 737.000000)">
+                <g>
+                    <rect id="Rectangle-10" fill="#E1E0EC" x="0" y="0" width="14" height="14"></rect>
+                    <polygon id="Combined-Shape" fill="#FFFFFF" transform="translate(7.000000, 7.000000) rotate(-90.000000) translate(-7.000000, -7.000000) " points="10 3.06066017 6.10008839 7 10 10.9393398 8.94995581 12 4 7 8.94995581 2 10 3.06066017"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

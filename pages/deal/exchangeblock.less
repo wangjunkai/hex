@@ -1,0 +1,232 @@
+@import '../../static/styles/color.less';
+
+/*交易模块start*/
+.exchange-block {
+  background-color: @cl_content;
+  width: 628px;
+  height: 294px;
+  overflow: hidden;
+  .exchange-block_content {
+    padding-left: 20px;
+    padding-top: 15px;
+    line-height: 1;
+    font-size: 14px;
+    color: @cl_5E6573;
+  }
+
+  .exchange-block_content:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .exchange-block_content_left {
+    padding-right: 20px;
+    width: 50%;
+  }
+
+  .exchange-block_content_right {
+    padding: 0 20px 20px 0;
+    width: 50%;
+  }
+
+  .exchange-block_tip {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 14px;
+  }
+
+  .exchange-block_tip.tip_exchange {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .exchange-block_tip .tip {
+    color: @cl_fff;
+  }
+
+  .exchange-block_tip .num {
+    color: @cl_fff;
+    margin-left: 10px;
+  }
+
+  .exchange-block_recharge {
+    float: right;
+    color: @cl_link;
+    cursor: pointer;
+  }
+
+  .exchange-block_button_buy,
+  .exchange-block_button_sale {
+    line-height: 36px;
+    height: 36px;
+    text-align: center;
+    color: @cl_fff;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    user-select: none;
+  }
+
+  .exchange-block_button_sale.no_login,
+  .exchange-block_button_buy.no_login {
+    background: #292E39;
+    color: #383655;
+  }
+  .no_login .repeal {
+    color: @cl_link;
+  }
+
+  .exchange-block_button_buy {
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(26, 195, 101, 1) 0%, rgba(24, 203, 100, 1) 100%);
+  }
+
+  .exchange-block_button_sale {
+    font-weight: 600;
+    background: linear-gradient(90deg, rgba(239, 46, 90, 1) 0%, rgba(229, 54, 79, 1) 100%);
+  }
+
+  .exchange-block_per {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  .exchange-block_per li {
+    display: inline-block;
+    width: 65px;
+    background-color: #21283E;
+    color: #8583AC;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+
+  .exchange-block_per li:hover {
+    background-color: @cl_link;
+    color: @cl_fff;
+  }
+
+  .exchange-block_input {
+    background-color: @cl_171B23;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #292E39;
+    border-radius: 3px;
+  }
+
+  .exchange-block_input .market_tip {
+    padding: 0 45px 0 65px;
+    color: @cl_CED3DD;
+    font-size: 12px;
+  }
+
+  .exchange-block_input .ipt_hover {
+    padding-left: 65px;
+    padding-right: 45px;
+    background-color: transparent;
+    height: 36px;
+    line-height: 36px;
+    left: 0;
+    display: block;
+    width: 100%;
+    color: @cl_CED3DD;
+  }
+
+  .exchange-block_input .before,
+  .exchange-block_input .after {
+    padding: 0 10px;
+    position: absolute;
+    line-height: 36px;
+    height: 36px;
+  }
+
+  .exchange-block_input .before {
+    left: 0;
+  }
+
+  .exchange-block_input .after {
+    right: 0;
+  }
+  .exchange-block_nav {
+    color: @cl_8790A1;
+    font-size: 14px;
+    border-bottom: 1px solid @cl_292E39;
+  }
+
+  .exchange-block_nav > span {
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 10px;
+  }
+
+  .exchange-block_nav .active {
+    position: relative;
+    background-color: @cl_292E39;
+    color: @cl_link;
+    border-top: 2px solid @cl_link;
+  }
+
+  .exchange-block_button--unavailable {
+    background-color: @cl_ddd !important;
+    color: @cl_bbb !important;
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  .exchange-block_owner_tip {
+    position: absolute;
+    background-color: @cl_292E39;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    padding: 0 10px;
+    width: 100%;
+    color: @cl_CED3DD;
+    top: 34px;
+  }
+
+  .exchange-block_current_exchange {
+    font-size: 12px;
+    color: @cl_fff;
+    text-align: right;
+    padding-bottom: 5px;
+    height: 22px;
+  }
+
+  .exchange-block_current_exchange .tip {
+    color: @cl_5E6573;
+    margin-left: 10px;
+  }
+
+}
+
+.exchange-block_button_buy,
+.exchange-block_button_sale {
+  .el-loading-spinner .path {
+    stroke: #ffffff;
+  }
+  .circular {
+    padding: 5px 0;
+  }
+}
+.exchange-block_button_buy {
+  .el-loading-mask {
+    background: linear-gradient(90deg, #1ac365 0%, #18cb64 100%);
+    border-radius: 3px;
+  }
+}
+.exchange-block_button_sale {
+  .el-loading-mask {
+    background: linear-gradient(90deg, #ef2e5a 0%, #e5364f 100%);
+    border-radius: 3px;
+  }
+}

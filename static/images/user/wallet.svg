@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <title>wallet</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="个人中心-修改" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心" transform="translate(-351.000000, -316.000000)">
+            <g id="Group-16" transform="translate(331.000000, 80.000000)">
+                <g id="USER-Copy" transform="translate(0.000000, 220.000000)">
+                    <g id="wallet" transform="translate(20.000000, 16.000000)">
+                        <g>
+                            <circle id="Oval-2" fill="#F0EFFF" cx="18" cy="18" r="18"></circle>
+                            <path d="M26,16 L18,16 L18,20 L26,20 L26,25 L10,25 L10,11 L26,11 L26,16 Z M12,21 L12,23 L13,23 L13,21 L12,21 Z M14,21 L14,23 L15,23 L15,21 L14,21 Z M19,17 L26,17 L26,19 L19,19 L19,17 Z" id="Combined-Shape" fill="#8583AC"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

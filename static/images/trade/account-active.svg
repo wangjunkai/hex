@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>选中</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="C2C" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="创建挂单" transform="translate(-954.000000, -568.000000)" fill-rule="nonzero">
+            <g id="Group-4" transform="translate(174.000000, 286.000000)">
+                <g id="Group-Copy-2" transform="translate(666.000000, 0.000000)">
+                    <g id="Group-11-Copy-2" transform="translate(0.000000, 206.000000)">
+                        <g id="Group-2" transform="translate(10.000000, 58.000000)">
+                            <g id="选中" transform="translate(104.000000, 18.000000)">
+                                <path d="M16,0 L16,13 C16,14.6568542 14.6568542,16 13,16 L0,16 L16,0 Z" id="Triangle" fill="#6F8FF1"></path>
+                                <polygon id="Path-2" fill="#FFFFFF" points="13.5389402 8 14.6842995 9.14535926 9.98919642 13.8404623 7 10.8512659 8.14535926 9.70590662 9.98919642 11.5497438"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

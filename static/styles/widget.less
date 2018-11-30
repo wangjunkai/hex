@@ -1,0 +1,732 @@
+@import './color.less';
+
+/*hex flex 布局css --------------start*/
+.hex-flex {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.full .hex-flex {
+  height: 100%;
+}
+
+.hex-flex .hex-flex_auto {
+  flex: auto;
+}
+
+/*hex flex 布局css  --------------end*/
+
+.rt {
+  text-align: right;
+}
+
+.lt {
+  text-align: left;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.font(@size,
+@height) {
+  font-size: @size;
+  line-height: @height;
+}
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fz12 {
+  font-size: 12px;
+}
+
+.por {
+  position: relative;
+}
+
+.poa {
+  position: absolute;
+}
+
+.w1200 {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.w990 {
+  width: 990px;
+  float: right;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.block {
+  display: block
+}
+
+.inline-black {
+  display: inline-block
+}
+
+.mgt15 {
+  margin-top: 15px;
+}
+
+.c-3 {
+  color: #333;
+}
+
+.fw {
+  font-weight: bold;
+}
+
+.w1200 {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fz12 {
+  font-size: 12px;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.pdt20 {
+  padding-top: 20px;
+}
+
+.mgt10 {
+  margin-top: 10px;
+}
+
+.mgt20 {
+  margin-top: 20px;
+}
+
+.pdb20 {
+  padding-bottom: 20px;
+}
+
+.mgb5 {
+  margin-bottom: 5px;
+}
+
+.mgb20 {
+  margin-bottom: 20px;
+}
+
+.pdr15 {
+  padding-right: 15px;
+}
+
+.mgr20 {
+  margin-right: 20px;
+}
+
+.mgl5 {
+  margin-left: 5px;
+}
+
+.mgl20 {
+  margin-left: 20px;
+}
+
+.sanj {
+  position: absolute;
+  top: -6px;
+  right: 85px;
+  border: 1px solid #ccc;
+  border-bottom: 0 none;
+  border-right: 0 none;
+  width: 12px;
+  height: 12px;
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  box-sizing: border-box;
+  background: #F6F6FC;
+}
+
+.c-blue {
+  color: @cl_link;
+}
+
+.c-a {
+  color: #aaa;
+}
+
+.tac {
+  text-align: center;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+.arrow {
+  background: url('../images/userarrowright.png') no-repeat right center;
+}
+
+// }
+// 侧边栏公用样式
+.articles {
+  width: 200px;
+  font-size: 14px;
+  color: #333;
+  h2 {
+    background: white;
+    border-bottom: 1px solid rgba(133, 131, 172, 0.2);
+    padding-left: 36px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  ul {
+    background: white;
+    padding: 10px 0;
+    li {
+      font-size: 14px;
+      line-height: 40px;
+      padding-left: 36px;
+      cursor: pointer;
+    }
+    li.hover {
+      background: #F0EFF7;
+      color: @cl_link;
+      border-left: 2px solid @cl_link;
+    }
+  }
+}
+
+.changes {
+  margin-top: 10px;
+  width: 200px;
+  height: 36px;
+  background: @cl_link;
+  color: white;
+  line-height: 36px;
+  text-align: center;
+}
+
+/*  安全设置公共css */
+
+input.validation.w270 {
+  width: 270px;
+}
+
+.get-code {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: @cl_link;
+  background: #F0EFF7;
+  font-size: 14px;
+}
+
+.user-infomation-number {
+  font-size: 12px;
+  width: 270px;
+  span {
+    color: #666;
+  }
+  span:last-child {
+    color: #bbb;
+  }
+}
+
+.common-head {
+  padding: 20px 20px 20px 76px;
+  height: 68px;
+  box-sizing: border-box;
+  line-height: 28px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  background: white;
+  font-size: 18px;
+  span {
+    float: left;
+    color: #333;
+    font-weight: bold;
+  }
+  .goback {
+    width: 20px;
+    height: 20px;
+    background: url('./../images/security/an_back@2x.svg') no-repeat center center;
+    background-size: 20px 20px;
+    margin: 4px 10px 0 0;
+    cursor: pointer;
+  }
+}
+
+.withdraw, .goolge, .binding, .changegoogle, .change-password, .edit-api {
+  .common-head {
+    background: white url('../images/security/an_big_safe@2x.svg') no-repeat 20px center;
+    background-size: 36px 36px;
+  }
+}
+
+.validation-area-countant {
+  margin-top: 20px;
+}
+
+/*安全设置表单*/
+input.validation {
+  border: 1px solid rgba(221, 221, 221, 1);
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #333;
+}
+
+.validation-title {
+  color: #666;
+  font-size: 12px;
+}
+
+.commitBtn {
+  width: 400px;
+  background: @cl_link;
+  line-height: 40px;
+  height: 40px;
+  color: white;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+// input的hover效果
+input.ipt_hover:hover, input.ipt_hover:focus,
+.input:hover, .input:focus,
+select.select:hover, select.select:focus,
+.el-select .el-input.is-focus .el-input__inner {
+  border: 1px solid rgba(133, 131, 172, 1) !important;
+
+}
+
+.el-select .el-input__inner:focus,
+.el-select-dropdown__item.selected {
+  border-color: #c0c4cc !important;
+}
+
+.traded-block-search_button,
+.search-tip,
+.searchBtn {
+  background: @cl_link !important;
+  border: none;
+}
+
+// 按钮的hover效果
+.searchBtn:hover,
+button.submit-audit:hover,
+.button.identity-verification:hover,
+.commitBtn:hover,
+.establish:hover,
+.changes:hover,
+.traded-block-search_button:hover,
+.search-tip:hover, .mention-money-button:hover, .service button:hover { //提交普通
+  background: @cl_link_hover !important;
+}
+
+.traded-block-search_button,
+.search-tip, .searchBtn {
+  background: @cl_link !important;
+  border: none;
+}
+
+button.get-code:hover, span.get-code:hover { //获取
+  background: @cl_link_hover !important;
+}
+
+/*建议提示*/
+
+.setting-suggest {
+  height: 197px;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  h3 {
+    color: #cd4559;
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-weight: 600;
+  }
+  p {
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/*  安全设置css end */
+
+/*验证弹窗*/
+
+.popup {
+  .mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+  }
+  .mask-content {
+    z-index: 10000;
+    background: white;
+    width: 480px;
+    padding: 18px 20px 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin:100px auto;
+    .title span {
+      height: 22px;
+      font-size: 16px;
+      color: #333;
+      font-weight: bold;
+    }
+    .user-infomation-number span {
+      font-size: 12px;
+      color: #666;
+    }
+    .close {
+      float: right;
+      width: 16px;
+      height: 16px;
+    }
+    .info {
+      padding: 0 20px 0;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.mention-site .popup .mask-content{
+  position: fixed;
+  top:20px;
+}
+.edit-api .popup .mask-content{
+  position: fixed;
+  top:100px;
+}
+
+
+[v-cloak] {
+  display: none;
+}
+
+.swiper-pagination-bullet {
+  outline: none;
+  width: 30px !important;
+  height: 6px;
+  display: inline-block;
+  background: #000;
+  opacity: 0.2;
+  border-radius: 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: @cl_link !important;
+}
+
+.el-select.select_input.lv2 input {
+  width: 238px;
+  border-radius: 0;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px !important;
+}
+
+/*美洽沟通*/
+body #MEIQIA-BTN-HOLDER {
+  bottom: 10px;
+}
+
+.search-tip, .changes, .coin-content.day .coin-list .body {
+  cursor: pointer;
+}
+
+.select_input.mobile {
+  width: 400px;
+}
+
+.nation .el-select .el-input .el-input__inner {
+  border-radius: 0 !important;
+}
+
+.auth-content_group--error.nation .el-select .el-input .el-input__inner {
+  border: 1px solid #CD4559 !important;
+  color: #CD4559 !important;
+  border-radius: 0;
+}
+
+/*scrollbar */
+.vb > .vb-dragger {
+  z-index: 5;
+  width: 6px;
+  right: 0;
+  opacity: 0;
+  transition: opacity 120ms ease-out;
+}
+
+.vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out,
+  margin 100ms ease-out,
+  height 100ms ease-out;
+  transition: background-color 100ms ease-out,
+  margin 100ms ease-out,
+  height 100ms ease-out;
+  background-color: rgba(33, 40, 62, .6);
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb > .vb-dragger {
+  right: 2px;
+  .vb-dragger-styler {
+    background-color: rgba(94, 101, 115, 0.6);
+  }
+}
+
+.vb.vb-visible:hover > .vb-dragger {
+  opacity: 1;
+}
+
+/*去掉ie上的滚动条*/
+.vb-content {
+  /*width: 100% !important;*/
+}
+
+.vb-content::-webkit-scrollbar {
+  display: none;
+}
+
+//加载按钮颜色
+.button-loading--por {
+  position: relative;
+  .el-loading-mask {
+    top: 1px;
+    .el-loading-spinner {
+      background: @cl_link;
+      height: 40px;
+      .circular {
+        width: 30px;
+        .path {
+          stroke: white;
+        }
+      }
+    }
+  }
+}
+
+//分页样式
+.paging-source, .deal-paging-source {
+  text-align: center;
+  padding: 10px 0;
+}
+
+#app .el-pagination.is-background .btn-prev,
+#app .el-pagination.is-background .btn-next,
+#app .el-pagination.is-background .el-pager li {
+  background: white;
+  border: 1px solid rgba(221, 221, 221, 1);
+}
+
+.deal-paging-source .el-pagination.is-background .btn-prev,
+.deal-paging-source .el-pagination.is-background .btn-next,
+.deal-paging-source .el-pagination.is-background .el-pager li {
+  background: none;
+  border: 1px solid rgba(52, 75, 108, 1);
+}
+
+.deal-paging-source .el-pagination.is-background .el-pager li:not(.disabled).active {
+  border: none;
+  background: @cl_link;
+}
+
+#app .el-pagination.is-background .el-pager li:not(.disabled).active {
+  border: none;
+  background: @cl_link;
+}
+
+.paging-source-deal .el-pagination.is-background .btn-prev,
+.paging-source-deal .el-pagination.is-background .btn-next,
+.paging-source-deal .el-pagination.is-background .el-pager li {
+  background: none !important;
+  border: 1px solid #dddddd !important;
+}
+
+.paging-source-deal .el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: @cl_link !important;
+  color: #fff !important;
+}
+
+//暂无记录样式
+.anonymous {
+  min-height: 303px;
+  background: white;
+  line-height: 22px;
+  font-size: 14px;
+  padding-top: 90px;
+  .anonymous-pic {
+    img {
+      width: 130px;
+      height: 72px;
+      display: block;
+      margin: auto;
+    }
+  }
+  .anonymous-tip {
+    margin-top: 10px;
+    text-align: center;
+    color: rgba(189, 188, 203, 1);
+    display: block;
+    cursor: pointer;
+    span {
+      color: @cl_link
+    }
+  }
+}
+
+//loading样式
+.loadingPic {
+  min-height: 303px;
+}
+
+.loadingPic.deal .el-loading-mask {
+  background: none;
+}
+
+.hex-loading {
+  position: relative;
+}
+
+.hex-loading .el-loading-mask {
+  background-color: transparent;
+}
+
+.hex-loading .el-loading-spinner .path {
+  stroke: @cl_link
+}
+
+//单选框
+.hide-trading .el-checkbox .el-checkbox__input .el-checkbox__inner {
+  background-color: #292E39;
+  border: 1px solid #556380;
+}
+
+.hide-trading .el-checkbox__input.is-checked .el-checkbox__inner,
+.hide-trading .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background: @cl_link !important;
+  border-color: @cl_link !important;
+}
+
+//帮助中心 展开、收起
+.my-biji-view.list-paddingleft-2 li > div {
+  display: none;
+}
+
+//m select
+.mobile.phone .auth-content_form .auth-content_group .mobile-select .el-input input,
+.mobile.phone .auth-content_form .auth-content_group .mobile-select .el-input input:focus {
+  padding-left: 0;
+  border: none;
+  font-size: 16px;
+  outline: none !important;
+}
+
+.mobile.phone .el-select .el-input.is-focus .el-input__inner {
+  border: none !important;
+}
+
+.my-biji-view li .biji-content {
+  background: white !important;
+}
+
+.partnerPopup.el-dialog {
+  width: 371px !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.el-checkbox .el-checkbox__inner:hover {
+  border-color: #6F8FF1
+}
+
+.el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #6F8FF1;
+  border-color: #6F8FF1;
+}
+
+//支付方式绑定样式
+.el-dialog.dialog-tip-payment {
+  width: 25%!important;
+  margin-top: 15% !important;;
+  .el-dialog__body {
+    padding: 5px 20px;
+    p {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+  .el-dialog__footer {
+    padding: 20px 20px 20px;
+    text-align: center;
+    .dialog-footer-span button {
+      font-size:14px;
+      padding: 8px 20px;
+      border-radius: 3px;
+      color: white;
+      background: @cl_link;
+
+    }
+    .dialog-footer-span button:first-child {
+      margin-right: 30px;
+      background:#ddd;
+    }
+  }
+}
