@@ -1,5 +1,6 @@
 <script>
   import * as jsCokie from 'js-cookie'
+  import init from '../../init'
   
   export default {
     name: 'error',
@@ -70,6 +71,33 @@
               this.$store.commit('set_server_user_assets_uc', _assets)
             }
           })
+      },
+      /*是否维护中*/
+      isMaintain() {
+        //测试 1048
+        this.$store.dispatch('com_constants_getconstantsinfo', {id: init.pro ? 1052 : 1048})
+          .then(({data}) => {
+            if (data.cvalue) {
+              let {en_us, zh_cn} = JSON.parse(data.cvalue)
+              const zh_cnary = zh_cn.split('@')
+              const en_usary = en_us.split('@')
+              if (zh_cnary.length > 1) {
+                if (Number(zh_cnary[1]) * 1000 > (new Date().getTime())) {
+                  zh_cnary[1] = this.global_get_local_time(Number(zh_cnary[1])).format('YYYY-MM-DD HH:mm')
+                  en_usary[1] = this.global_get_local_time(Number(en_usary[1])).format('YYYY-MM-DD HH:mm')
+                  sessionStorage.setItem('isMaintain', JSON.stringify({
+                    zh_cn: zh_cnary.join(''),
+                    en_us: en_usary.join('')
+                  }))
+                  if (location.pathname != '/isMaintain') {
+                    location.href = '/isMaintain'
+                  }
+                  return
+                }
+              }
+            }
+            sessionStorage.setItem('isMaintain', '')
+          })
       }
     },
     mounted() {
@@ -84,6 +112,9 @@
         this.getRate()
         /*币种列表*/
         this.getFrenchCurrency()
+        
+        /*是否维护中*/
+        this.isMaintain()
       }
     },
     beforeCreate() {

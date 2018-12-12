@@ -32,6 +32,10 @@ export default (ref) => {
       }
     }
 
-    next()
+    if (from.path == '/isMaintain' && sessionStorage.getItem('isMaintain')) {
+
+    } else {
+      next()
+    }
   })
 }

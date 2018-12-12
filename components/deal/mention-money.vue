@@ -313,7 +313,7 @@
              v-model.trim="$v.mentionCoin.amount.$model"
              :placeholder="$t('wallet.mentionCountInput')">
     </div>
-    
+    <!--手机验证-->
     <div class="auth-content_group auth-content_group_code mention-money"
          v-if="$userinfo.isphoneauthed"
          :class="{'auth-content_group--error':$v.addressCode.smsverifycode.$error}">
@@ -330,8 +330,9 @@
         <verifycode :phone="$userinfo.phone"></verifycode>
       </div>
     </div>
+    <!--邮箱验证-->
     <div class="auth-content_group auth-content_group_code mention-money"
-         v-if="$userinfo.isemailauthed"
+         v-else-if="$userinfo.isemailauthed"
          :class="{'auth-content_group--error':$v.addressCode.emailverifycode.$error}">
       <p class="title clearfix">
         <span class="left">{{$t('formMenu.emailCodeVerification')}}</span>
@@ -346,7 +347,24 @@
         <verifycode :email="$userinfo.email"></verifycode>
       </div>
     </div>
-    <div class="auth-content_group clearfix" style="margin-top: 0">
+    
+    <!--小于2btc只校验资金密码-->
+    <!--交易密码验证-->
+    <div class="auth-content_group"
+         v-if="$userinfo.isopenpaypassword&&ismax2btc"
+         :class="{'auth-content_group--error':$v.addressCode.paypassword.$error}">
+      <p class="title clearfix">
+        <span class="left">{{$t('wallet.payPassword')}}</span>
+        <span class="normal-tip_error right"
+              v-if="!$v.addressCode.paypassword.required">{{$t('wallet.payPasswordNone')}}</span>
+      </p>
+      <input class="input ipt_hover"
+             v-model.trim="$v.addressCode.paypassword.$model"
+             :placeholder="$t('wallet.payPasswordInput')"
+             type="password">
+    </div>
+    <div v-else-if="!ismax2btc" class="auth-content_group clearfix" style="margin-top: 0">
+      <!--交易密码验证-->
       <div class="auth-content_group"
            v-if="$userinfo.isopenpaypassword"
            :class="{'auth-content_group--error':$v.addressCode.paypassword.$error,'left':$userinfo.isopengoogleverify}">
@@ -360,6 +378,7 @@
                :placeholder="$t('wallet.payPasswordInput')"
                type="password">
       </div>
+      <!--谷歌验证码-->
       <div class="auth-content_group right"
            v-if="$userinfo.isopengoogleverify"
            :class="{'auth-content_group--error':$v.addressCode.googleverifycode.$error}">
@@ -441,6 +460,9 @@
       },
       quota: function () {
         return this.global_get_tofixed(this.$store.getters.get_exchange_rate(this.currencyAll.currency.currencyname, this.maxmount), this.decimal.a);
+      },
+      ismax2btc: function () {
+        return (this.$store.state.user_allwithdrawlimtperday - this.$userinfo.withdrawlimtperday) <= 2
       }
     },
     watch: {
@@ -466,10 +488,18 @@
       }
     },
     mounted() {
+      if (this.initverify()) {
+        this.$store.commit('set_message', {type: 'error', text: this.$t('wallet.popengoogle')});
+        this.$router.push('/person/security')
+      }
     },
     created() {
     },
     methods: {
+      initverify() {
+        /*已提数量大于2btc并且没有开启谷歌验证*/
+        return !this.ismax2btc && !this.$userinfo.isopengoogleverify
+      },
       verifyCount() {
         const coin = this.$v.mentionCoin
         if (!coin.amount.isUnique) {
@@ -501,21 +531,23 @@
             state = true
           }
         }
-        if (this.$userinfo.isopengoogleverify) {
+        //大于单日已提币数量并且打开goole验证
+        if (!this.ismax2btc && this.$userinfo.isopengoogleverify) {
           const e = _self.$v.addressCode.googleverifycode
           e.$touch()
           if (e.$invalid) {
             state = true
           }
         }
+        
+        
         if (this.$userinfo.isphoneauthed) {
           const e = _self.$v.addressCode.smsverifycode
           e.$touch()
           if (e.$invalid) {
             state = true
           }
-        }
-        if (this.$userinfo.isemailauthed) {
+        } else if (this.$userinfo.isemailauthed) {
           const e = _self.$v.addressCode.emailverifycode
           e.$touch()
           if (e.$invalid) {
@@ -539,9 +571,19 @@
           })
           return
         }
-        coin.googleverifycode = this.addressCode.googleverifycode
-        coin.emailverifycode = this.addressCode.emailverifycode
-        coin.smsverifycode = this.addressCode.smsverifycode
+        if (this.ismax2btc) {
+          delete coin.googleverifycode
+        } else {
+          coin.googleverifycode = this.addressCode.googleverifycode
+        }
+        if (this.$userinfo.isphoneauthed) {
+          coin.smsverifycode = this.addressCode.smsverifycode
+          delete coin.emailverifycode
+        } else {
+          coin.emailverifycode = this.addressCode.emailverifycode
+          delete coin.smsverifycode
+        }
+        
         coin.currencyid = this.currencyAll.currency.id
         coin.fee = this.currencyAll.currency.withdrawminfee
         if (this.addressCode.paypassword) {
@@ -553,17 +595,20 @@
         _self.$store.dispatch('user_assets_withdraw', coin)
           .then(({data, msg}) => {
             if (data) {
-              _self.$store.commit('set_message', {
-                type: 'ok', text: msg
-              })
-              _self.$parent.showDetailRow(_self.currencyAll, 'mentionMoney')
-              _self.$emit('wallet:getInfo')
+              /*更新用户当日可提币的数量*/
+              return _self.global_refresh_user_info()
+                .then(() => {
+                  _self.$store.commit('set_message', {
+                    type: 'ok', text: msg
+                  })
+                  _self.$parent.showDetailRow(_self.currencyAll, 'mentionMoney')
+                  _self.$emit('wallet:getInfo')
+                })
             }
           })
-          .then(() => {
+          .then((data) => {
             _self.addstate = false
           })
-        
       },
       changeAddress(res) {
         const address = res.address

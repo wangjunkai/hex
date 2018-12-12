@@ -38,6 +38,7 @@
       font-size: 16px;
       margin-bottom: 35px;
       font-weight: 600;
+      padding: 0 5px;
     }
     .rate {
       font-family: HexNumber;

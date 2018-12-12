@@ -1,12 +1,12 @@
 <style lang='less' scoped>
   @import "../../static/styles/color";
-
+  
   .charge-money_tip {
     font-size: 18px;
     font-weight: bold;
     margin-right: 20px;
   }
-
+  
   .charge-money_info {
     font-size: 14px;
     text-align: left;
@@ -15,77 +15,77 @@
     color: @cl_666;
     position: relative;
   }
-
+  
   .charge-money_info .title {
     margin-bottom: 7px;
     font-size: 12px;
   }
-
+  
   .charge-money_info .btc {
     color: @cl_buy;
     font-size: 30px;
     font-weight: bold;
     margin-right: 5px;
   }
-
+  
   .charge-money_info .cny {
     color: @cl_link;
     font-size: 30px;
     font-weight: bold;
     margin-right: 5px;
   }
-
+  
   .charge-money_info .br {
     margin: 0 20px;
     border-right: 1px solid @cl_858;
     display: inline-block;
     height: 20px;
   }
-
+  
   .charge-money_info_title {
     line-height: 36px;
     margin-bottom: 8px;
   }
-
+  
   .charge-money_info_num {
     padding: 4px 0;
   }
-
+  
   .charge-money_info_address_button {
     color: @cl_link;
     margin-top: 16px;
   }
-
+  
   .charge-money-block {
     margin-top: 10px;
     background-color: @cl_fff;
   }
-
+  
   .charge-money-block-title {
     padding: 18px 20px;
   }
-
+  
   .charge-money-block-title .title_tip {
     font-size: 16px;
     font-weight: bold;
   }
-
+  
   .hex_table_body .size0 {
     font-size: 0;
   }
-
+  
   .hex_table_body .handle {
     color: @cl_link;
     font-size: 12px;
     margin-left: 30px;
   }
-
+  
   .charge-money_address {
     font-size: 14px;
     width: 450px;
     position: relative;
   }
-
+  
   .charge-money_address input {
     height: 40px;
     line-height: 40px;
@@ -93,7 +93,7 @@
     width: 100%;
     padding: 5px 90px 5px 10px;
   }
-
+  
   .charge-money_address .search-tip {
     width: 80px;
     background-color: @cl_link;
@@ -107,15 +107,15 @@
     line-height: 40px;
     height: 40px;
   }
-
+  
   .charge-money-block-search .search-tip::placeholder {
     color: @cl_bbb;
   }
-
+  
   .charge-money_scan {
     display: inline-block;
   }
-
+  
   .charge-money_scan span {
     line-height: 40px;
     height: 40px;
@@ -127,11 +127,11 @@
     text-align: center;
     display: inline-block;
   }
-
+  
   .charge-money_group {
     width: auto;
   }
-
+  
   .charge-money_hint {
     padding: 10px;
     background-color: @cl_f9f;
@@ -140,40 +140,40 @@
     line-height: 24px;
     margin-top: 20px;
   }
-
+  
   .charge-money_hint .title {
     color: @cl_999;
   }
-
+  
   .charge-money_info .title.tag {
     margin-top: 20px;
   }
-
+  
   .charge-money_hint .tip {
     color: @cl_cd4;
     font-size: 14px;
     font-weight: 600;
   }
-
+  
   .charge-money_hint .row {
     color: @cl_666;
   }
-
+  
   .charge-money_follow {
     font-size: 12px;
     margin-top: 20px;
   }
-
+  
   .charge-money_follow .charge-money_follow_tip {
     color: @cl_link;
     cursor: pointer;
   }
-
+  
   .charge-money_address input[readonly] {
     background-color: @cl_f0f;
     color: @cl_000;
   }
-
+  
   .charge-money_scan .code {
     width: 140px;
     height: 140px;
@@ -183,7 +183,7 @@
     border: 1px solid #dddddd;
     background: white;
   }
-
+  
   .charge-money_scan .code:before {
     content: '';
     position: absolute;
@@ -199,12 +199,12 @@
     box-sizing: border-box;
     background: #fff;
   }
-
+  
   .charge-money_scan .code.tag {
     bottom: -20px;
     top: inherit;
   }
-
+  
   .charge-money_scan .code.tag:before {
     content: '';
     position: absolute;
@@ -220,13 +220,13 @@
     box-sizing: border-box;
     background: #fff;
   }
-
+  
   .charge-money_scan .get-code {
     position: relative;
   }
-
+  
   .marked_words {
-
+    
     display: none;
     width: 100px;
     right: -8px;
@@ -262,7 +262,7 @@
       background: rgba(240, 239, 247, 1);
     }
   }
-
+  
   .sanj {
     position: absolute;
     top: -6px;
@@ -275,11 +275,11 @@
     box-sizing: border-box;
     background: #fff;
   }
-
+  
   .zhLocation {
     right: 133px;
   }
-
+  
   .enLocation {
     right: 225px;
   }
@@ -339,7 +339,7 @@
           </div>
         </div>
       </div>
-
+      
       <p class="charge-money_follow">
         {{$t('wallet.lookOver')}}
         <nuxt-link
@@ -356,6 +356,7 @@
         {{$t('wallet.forbid')}}{{currencyname}}{{$t('wallet.forbidM')}}{{currencyname}}{{$t('wallet.forbidE')}}</p>
       <p v-html="currencyAll.tip">
       </p>
+      <p v-if="currencyname=='EOS'">3. EOS 币充值当前暂不支持延时交易</p>
     </div>
   </div>
 </template>
@@ -363,7 +364,7 @@
   import coinselect from '@/components/security/coin-select'
   import QRcode from 'qrcode'
   import Clipboard from 'clipboard';
-
+  
   export default {
     name: 'articles',
     components: {
@@ -394,7 +395,7 @@
         tagQrcodeState: false,
         nextUid: '',
         address: ''
-
+        
       }
     },
     mounted() {

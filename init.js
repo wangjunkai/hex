@@ -7,8 +7,8 @@ let localapi = 'http://10.33.0.110:9090'
 let testauth = 'http://testauth.hex.com'
 let testapi = 'http://13.115.43.192:9090'
 const initproxy = false
-const initauth = authapi
-const initapi = localapi
+const initauth = auth
+const initapi = api
 
 let obj = {
   /*
@@ -115,7 +115,8 @@ let init = {
   proxy: initproxy,
   auth: initauth,
   api: initapi,
-  obj: obj
+  obj: obj,
+  pro: initauth == auth
 }
 
 export default init

@@ -5,8 +5,8 @@
         <div class="course first-course ">
           <div class="guidance">
             <a class="guidance-btn"
-               href="itms-services://?action=download-manifest&url=https://images.hexpro.biz/hex/HEX.plist">
-              <img src="~static/images/guide/down-android.png" alt="">
+               href="itms-services://?action=download-manifest&url=https://images.ihuoqiu.com/hex/HEX.plist">
+              <img src="~static/images/guide/down-ios-server.png" alt="">
             </a>
             <a class="guidance-btn" href="javascript:;">
               <img src="~static/images/guide/down-ios.png" alt="">

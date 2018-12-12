@@ -19,9 +19,13 @@
           </no-ssr>
         </div>
         <div class="banner-swiper2">
-          <div class="banner-swiper2-content" @click="goRush(recommendBannel.id)">
+          <div v-if="recommendBannel"
+               class="banner-swiper2-content"
+               @click="goRush(recommendBannel.id)">
             <p class="recommend">{{$t('manage.Popular')}}</p>
-            <p class="title">{{recommendBannel.name}}</p>
+            <p class="title" v-if="recommendBannel.pronames">
+              {{lang=='en_us'?recommendBannel.pronames.en_us:recommendBannel.pronames.zh_cn}}</p>
+            <p class="title" v-else>{{recommendBannel.name}}</p>
             <p class="date">{{$t('manage.LimitTime')}} {{recommendBannel.cycle}} {{$t('manage.Day')}}</p>
             <p class="rate">{{(recommendBannel.yearlyrate*100).toFixed(2)}}%</p>
             <p class="rate_tip">{{$t('manage.Estimate')}}</p>
@@ -36,7 +40,8 @@
                   :paginationEnabled="false">
           <slide v-for="item in listBanner" :key="item.id">
             <div class="banner-swiper3-content" @click="goRush(item.id)">
-              <p class="title">{{item.name}}</p>
+              <p class="title" v-if="item.pronames">{{lang=='en_us'?item.pronames.en_us:item.pronames.zh_cn}}</p>
+              <p class="title" v-else>{{item.name}}</p>
               <p class="clearfix">
                 <span class="rate left">{{(item.yearlyrate*100).toFixed(2)}}%</span>
                 <financial-button class="right" :product="item"></financial-button>
@@ -115,14 +120,14 @@
     background-image: url("../../static/images/financial/bg.png");
     background-repeat: no-repeat;
     
-    .financial-block-main {
-      position: relative;
-      min-height: 500px;
-    }
     .financial {
       width: 1200px;
       min-width: 1200px;
       margin: auto;
+    }
+    .financial-block-main {
+      position: relative;
+      min-height: 500px;
     }
     .banner-group {
       margin: 0 0 10px 0;
@@ -223,7 +228,7 @@
         background-repeat: no-repeat;
         background-position: top right;
         box-shadow: 0 5px 10px 0 rgba(255, 130, 0, 0.15);
-        padding: 0 25px 0 25px;
+        padding: 0 22px;
         transition: all .3s cubic-bezier(.645, .045, .355, 1);
         .title {
           margin-top: 30px;
@@ -260,9 +265,6 @@
           margin-top: 10px;
         }
       }
-    }
-    .financial-block-title:first-child {
-      margin-top: 60px;
     }
     .financial-block-title {
       margin: 40px 0;
@@ -313,7 +315,12 @@
       carousel, slide, product,
       'financial-button': finbutton
     },
-    watch: {},
+    watch: {
+      '$store.state.hex_lang.locale': function (val) {
+        this.lang = val
+        this.getArticle()
+      }
+    },
     async asyncData({store, params, redirect}) {
       const {data} = await store.dispatch('finance_product_search', {
         status: null,
@@ -333,10 +340,11 @@
     data() {
       return {
         swiperBannel: [],
-        recommendBannel: {},
+        recommendBannel: null,
         listBanner: [],
         areaList: [],
-        areaListLoading: true
+        areaListLoading: true,
+        lang: this.$store.state.hex_lang.locale
       };
     },
     methods: {
@@ -397,7 +405,6 @@
       }
     },
     mounted() {
-      console.log(this.listBanner)
       this.getArticle()
       this.getAreaList()
     },

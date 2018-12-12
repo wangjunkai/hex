@@ -105,6 +105,14 @@ export function set_ip(state, ip) {
   state.ip = ip
 }
 
+export function set_maintain(state, obj) {
+  state.maintain = obj
+}
+
+export function set_user_allwithdrawlimtperday(state, obj) {
+  state.user_allwithdrawlimtperday = obj
+}
+
 /*设置本地自选*/
 export function set_client_collect(state, id) {
   let collect = JSON.parse(localStorage.getItem('HEX_COLLECT'))

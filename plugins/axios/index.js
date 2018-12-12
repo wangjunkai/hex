@@ -29,7 +29,7 @@ export default function ({app, store, $axios, redirect}) {
       }
       //console.log('request:' + config.url, config.data)
 
-      // console.log('requestJSON:' + config.url, JSON.stringify(config.data))
+      //console.log('requestJSON:' + config.url, JSON.stringify(config.data))
 
       if (config.data) {
         const strData = JSON.stringify(config.data)

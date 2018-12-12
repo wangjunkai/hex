@@ -480,7 +480,7 @@
         text-align: center;
       }
       .en_title_tip {
-        padding-right: 10px;
+        padding-right: 40px;
       }
       .tip1 {
         font-size: 32px;

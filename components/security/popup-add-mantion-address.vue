@@ -280,7 +280,14 @@
 </script>
 <style lang='less' scoped>
   @import "./../../static/styles/auth.less";
-  
+  .popup{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+  }
   .auth-content_group_mail .mail_code {
     height: 40px;
   }

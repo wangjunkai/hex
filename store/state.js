@@ -106,6 +106,8 @@ export default () => ({
   ip: '',
   //合并深度
   dotType: 8,
+  maintain: {},
+  user_allwithdrawlimtperday: '',
   //token 参数
   tokenParams: {
     grant_type: 'client_credentials',

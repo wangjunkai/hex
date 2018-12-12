@@ -1190,10 +1190,12 @@
     },
     async fetch({store, params}) {
       /*获取腾讯 im sign*/
-      const tencentim_sign = await store.dispatch('trading_c2c_tencentim_sig_get')
-      const _sign = tencentim_sign.data ? tencentim_sign.data : ''
-      if (_sign) {
-        store.commit('set_server_tencentim_sign', _sign)
+      if(store.state.hex_uid.value){
+        const tencentim_sign = await store.dispatch('trading_c2c_tencentim_sig_get')
+        const _sign = tencentim_sign.data ? tencentim_sign.data : ''
+        if (_sign) {
+          store.commit('set_server_tencentim_sign', _sign)
+        }
       }
     },
     async asyncData({store, params}) {

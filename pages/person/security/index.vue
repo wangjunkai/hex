@@ -1,6 +1,6 @@
 <template>
   <div class='setting fr'>
-    <popup
+    <popuppassword
       @closepopup='popups()'
       @confirm="confirm"
       v-show="popupstate"
@@ -33,7 +33,7 @@
             <span class='safety' v-if="security==1">{{$t('formMenu.passwordWeak')}}</span>
             <span class='strength_centre' v-if="security==2">{{$t('formMenu.passwordMiddle')}}</span>
             <span class='safety_tall' v-if="security==3">{{$t('formMenu.passwordStrong')}}</span>
-
+          
           </div>
           <span v-if="!$userinfo.isopengoogleverify">{{$t('memberCenter.suggestOpenGoogle')}}</span>
         </div>
@@ -71,7 +71,7 @@
               <div class='setting-tab-isopen fr'>
                 <!--<span class='fl combined gray'> {{$userinfo.phone?"修改":""}}</span>-->
                 <span class='mgl20 fr' @click="openEmail('phone')">{{$userinfo.isphoneauthed?$t('formMenu.open'):$t('formMenu.notOpenAuthod')}}</span>
-
+              
               </div>
             </div>
           </li>
@@ -92,7 +92,7 @@
                 <span
                   @click="openEmail('email')"
                   class='mgl20 fr '>{{$userinfo.isemailauthed?$t('formMenu.open'):$t('formMenu.notOpen')}}</span>
-
+              
               </div>
             </div>
           </li>
@@ -110,7 +110,7 @@
               <span @click="openGoogle" class='setting-tab-isopen fr mgl20 '>
                   {{$userinfo.isgoogleauthed?$t('formMenu.open'):$t('formMenu.notOpenAuthod')}}
                 </span>
-              <span  v-if="$userinfo.isgoogleauthed">
+              <span v-if="$userinfo.isgoogleauthed">
                 <nuxt-link to="/person/security/google-change" class='fr  combined gray cursor'>{{$userinfo.isgoogleauthed?$t('security.modify'):""}}</nuxt-link>
               </span>
             </div>
@@ -143,11 +143,11 @@
 </template>
 <script>
   import suggest from './setting-suggest'
-  import popup from '@/components/security/popup-public'
-
+  import popuppassword from '@/components/security/popup-capital-password'
+  
   export default {
     components: {
-      suggest, popup
+      suggest, popuppassword
     },
     data() {
       return {
@@ -172,14 +172,10 @@
         this.popupstate = val;
       },
       setCapital(val) {
-        if (!this.$userinfo.isopengoogleverify) {
-          this.$store.commit('set_message', {type: 'error', text: this.$t('patch.popengoogle')});
+        if (this.$userinfo.isopenpaypassword) {
+          return;
         } else {
-          if (this.$userinfo.isopenpaypassword) {
-            return;
-          } else {
-            this.capital(val);
-          }
+          this.capital(val);
         }
       },
       capital(val) {
@@ -189,48 +185,40 @@
       confirm(_this) {
         const _self = this;
         const childThis = _this;
-        if (!this.$userinfo.isopengoogleverify) {
-          this.$store.commit('set_message', {type: 'error', text: this.$t('patch.popengoogle')});
-          return;
-        }
+        
         if (childThis.moneyState) return;
-
-        this.$store.dispatch('user_google_verfiycode_check', {
-          googlesecretkey: this.$userinfo.googlesecretkey,
-          verifycode: childThis.googleverifycode
-        })
-          .then(({data}) => {
-            if (!data) {
-              _self.$refs.child.closeloading();
-              throw false
+        
+        Promise.resolve()
+          .then(() => {
+            if (this.$userinfo.isphoneauthed) {
+              return _self.$store.dispatch('user_sms_verfiycode_check', {
+                phone: childThis.loginInfo.phone,
+                verifycode: childThis.smsverifycode
+              })
+            } else if (this.$userinfo.isemailauthed) {
+              return _self.$store.dispatch('user_email_verfiycode_check', {
+                email: childThis.loginInfo.email,
+                verifycode: childThis.emailverifycode
+              })
+            } else if (this.$userinfo.isopengoogleverify) {
+              return this.$store.dispatch('user_google_verfiycode_check', {
+                googlesecretkey: this.$userinfo.googlesecretkey,
+                verifycode: childThis.googleverifycode
+              })
             }
-            return this.$userinfo.isphoneauthed ? _self.$store.dispatch('user_sms_verfiycode_check', {
-              phone: childThis.loginInfo.phone,
-              verifycode: childThis.smsverifycode
-            }) : {data: true}
-
           })
           .then(({data}) => {
             if (!data) {
-              _self.$refs.child.closeloading();
-              throw false;
-            }
-            return this.$userinfo.isemailauthed ? _self.$store.dispatch('user_email_verfiycode_check', {
-              email: childThis.loginInfo.email,
-              verifycode: childThis.emailverifycode
-            }) : {data: true}
-          })
-          .then(({data}) => {
-            if (!data) {
-              _self.$refs.child.closeloading();
               throw false
             }
             childThis.moneyState = false
             this.$router.push({name: "person-security-password-capital", params: {result: true}});
+            _self.$refs.child.closeloading();
           })
           .catch((e) => {
             _self.$refs.child.closeloading();
           })
+        
       },
       openEmail(val) {
         const userInfo = this.$userinfo;
@@ -239,7 +227,7 @@
         } else if (val == "email") {
           if (!userInfo.isemailauthed) this.$router.push("/person/security/binding-email-google");
         }
-
+        
       },
       openGoogle() {
         if (!this.$userinfo.isopengoogleverify) {
@@ -254,6 +242,7 @@
 </script>
 <style lang='less' scoped>
   @import "../../../static/styles/color";
+  
   @cl_333: #333333;
   @cl_999: #999;
   @bg_ea0: #ea003d;
@@ -263,7 +252,7 @@
   .setting-tab-isopen.fr.paypassword {
     margin-left: 20px;
   }
-
+  
   .setting {
     width: 990px;
     .setting-title {
@@ -326,7 +315,7 @@
           }
         }
       }
-
+      
       .setting-tab {
         ul {
           li {
@@ -346,15 +335,15 @@
                 display: inline-block;
                 width: 155px;
               }
-             .setting-tab-name.google{
-                width:200px;
+              .setting-tab-name.google {
+                width: 200px;
               }
             }
             .setting-tab-left.loginPassword {
               background: white url("../../../static/images/security/an_password_check.svg") no-repeat 0px center;
               background-size: 12px 14px;
             }
-
+            
             .setting-tab-left.note.check {
               background: white url("../../../static/images/security/an_note_check.svg") no-repeat 0px center;
               background-size: 14px 14px;
@@ -415,7 +404,7 @@
               }
             }
           }
-
+          
         }
       }
     }
@@ -424,13 +413,13 @@
       display: inline-block;
     }
   }
-
+  
   .combined {
     padding-left: 24px;
     background: url('../../../static/images/security/an_combined@2x.png') no-repeat left center;
     background-size: 14px 14px;
   }
-
+  
   .gray {
     color: #aaa;
   }

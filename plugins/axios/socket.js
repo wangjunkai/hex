@@ -4,7 +4,7 @@ import PubSub from 'pubsub-js'
 
 const _prohost = 'https://push.hex.com/hexhub'
 const _devhost = 'http://10.33.0.110:9087/hexhub'
-const _host = _devhost
+const _host = _prohost
 
 const _sub = 'sub'
 const _unsub = 'unsub'

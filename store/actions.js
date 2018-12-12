@@ -53,7 +53,7 @@ export default {
         if (state.hex_uid.value) {
           /*用户信息*/
           const user_data = await dispatch('user_user')
-          const _user = user_data.data ? user_data.data : user_data.hexdata
+          const _user = user_data.data
           if (_user) {
             commit('set_server_user_info', _user)
           }
@@ -128,6 +128,14 @@ export default {
   com_country_getlist({commit}, params, config) {
     return this.$axios.post('/comapi/v1.0/com/country.getlist', params, config)
   },
+  /*获取常量详细*/
+  com_constants_getconstantsinfo({commit}, params, config) {
+    return this.$axios.post('/comapi/v1.0/com/constants.getconstantsinfo', params, config)
+  },
+  user_user_settings_get({commit}, params, config) {
+    return this.$axios.post('/userapi/v1.0/user/user.settings.get', params, config)
+  },
+
   //注册登录
   user_user_signup({commit}, params, config) {
     return this.$axios.post('/userapi/v1.0/user/user.signup', params, config)

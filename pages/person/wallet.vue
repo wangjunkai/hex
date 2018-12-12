@@ -740,6 +740,7 @@
           this.$store.commit('set_message', {type: 'error', text: this.$t('wallet.openPayPassword')});
           this.$router.push('/person/security')
         }
+        
         if (!this.isVisibleDetailRow(row.currency.id)) {
           this.visibleDetailRows = [];
           this.visibleDetailRows.push(row.currency.id)
@@ -788,7 +789,24 @@
     mounted() {
       this.getWalletInfo();
       this.getUserassets();
-    }
+    },
+    async fetch({store, params}) {
+      /*获取腾讯 im sign*/
+      if (store.state.hex_uid.value) {
+        const tencentim_sign = await store.dispatch('trading_c2c_tencentim_sig_get')
+        const _sign = tencentim_sign.data ? tencentim_sign.data : ''
+        if (_sign) {
+          store.commit('set_server_tencentim_sign', _sign)
+        }
+  
+        /*单日最大额度*/
+        const {data} = await store.dispatch('user_user_settings_get')
+        if (data) {
+          store.commit('set_user_allwithdrawlimtperday', data.withdrawlimtperday)
+        }
+      }
+    },
+
   }
 </script>
 

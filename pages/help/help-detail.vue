@@ -147,7 +147,7 @@
           {articeid: id})
           .then((res) => {
             if (res.data) {
-              res.data.remark = res.data.remark.replace('<link rel="stylesheet" href="https://images.ihuoqiu.com/css/ihuoqiu/huoqiu.css?v=123">','')
+              //res.data.remark = res.data.remark.replace('<link rel="stylesheet" href="https://images.ihuoqiu.com/css/ihuoqiu/huoqiu.css?v=123">','')
               let titleSplit = res.data.title.split('' + this.lang + '-' + '')[1];
               res.data.title = titleSplit;
               this.articleInfo = res.data;
